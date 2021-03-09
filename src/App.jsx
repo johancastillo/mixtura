@@ -1,9 +1,10 @@
 import ContactsList from "./components/ContactsList"
 import ContactDetails from "./components/ContactDetails"
+import UserState from "./context/User/UserState";
 
 const App = () => {
   return (
-    <>
+    <UserState>
       <div className="container">
         <div className="row">
           <div className="col-md-6">
@@ -15,7 +16,7 @@ const App = () => {
           </div>
         </div>
       </div>
-    </>
+    </UserState>
   )
 }
 
