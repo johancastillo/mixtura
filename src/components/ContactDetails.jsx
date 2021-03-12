@@ -10,7 +10,7 @@ const ContactDetails = () => {
         <>
           {
                 selectedUser ?
-                <div className="card py-4 px-5 my-2 d-flex justify-content-center align-items-center" style={{position: "fixed"}}>
+                <div className="card py-4 px-5 my-2" style={{position: "fixed"}}>
                     <img src={selectedUser.avatar} className="rounded-circle" width="200" alt=""/>
                     
                     <p className="mt-4">
@@ -20,7 +20,9 @@ const ContactDetails = () => {
                     <p>{selectedUser.email}</p>
                 </div>
                 :
-                <h3 className="mt-2">No se ha seleccionado un usuario</h3>
+                <h3 className="mt-2" style={{position: "fixed"}}>
+                    No se ha seleccionado un usuario
+                </h3>
           }  
         </>
     )
